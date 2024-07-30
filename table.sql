@@ -1,0 +1,9 @@
+CREATE TABLE tbl_nm (
+  id  INT AUTO_INCREMENT,
+  uuid INT NOT NULL,
+  vmname  VARCHAR(255) NOT NULL,
+  hostname  VARCHAR(255) DEFAULT NULL,
+  ipaddress VARCHAR(255) DEFAULT NULL,
+  created_by VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id, uuid)
+);
