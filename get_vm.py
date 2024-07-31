@@ -35,7 +35,7 @@ for esxi in esxi_name:
 
     for i in list_dic:
         print(i["Vmid"])
-        getvm = f"ssh jasmine vim-cmd vmsvc/get.guest {i["Vmid"]}"
+        getvm = f"ssh {esxi} vim-cmd vmsvc/get.guest {i["Vmid"]}"
         vm = subprocess.run(getvm, shell=True, capture_output=True, text=True)
         vm = vm.stdout.replace(' ', '')
         vm = vm.split("\n")
