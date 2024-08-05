@@ -1,5 +1,8 @@
 # VM-manager
 
+## はじめに
+複数のESXiを使用している環境で，仮想マシンの情報をまとめて管理しておこうという目的のプログラムです．
+
 ## get_vm.py
 `vim-cmd vmsvc/getallvms`でESXiから仮想マシンのリストを取得
 
