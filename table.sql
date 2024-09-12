@@ -1,10 +1,9 @@
-CREATE TABLE tbl_nm (
+CREATE TABLE vm (
   id  INT AUTO_INCREMENT,
-  uuid INT NOT NULL,
   vmname  VARCHAR(255) NOT NULL,
   hostname  VARCHAR(255) DEFAULT NULL,
   ipaddress VARCHAR(255) DEFAULT NULL,
   created_by VARCHAR(255) NOT NULL,
   esxi VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id, uuid)
+  PRIMARY KEY (id)
 );
